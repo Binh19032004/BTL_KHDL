@@ -306,19 +306,9 @@ def render_story(d, news):
     
     st.markdown("---")
     
-    st.markdown("## 💡 Những Hiểu Biết Chính (Insights)")
-    st.markdown("""
-    1. **Hành Động Giá:** Theo dõi xu hướng với các mức hỗ trợ/kháng cự rõ ràng được xác định qua Đường Trung Bình Động
-    2. **Phân Bố Lợi Suất:** Histogram cho thấy phân bố gần như chuẩn nhưng có đuôi lệch, chỉ ra các sự kiện cực đoan ít xảy ra
-    3. **Mô Hình Theo Ngày:** Một số ngày trong tuần có mức biến động cao hơn, có thể do tin tức hoặc hoạt động giao dịch
-    4. **Mối Tương Quan:** Khối lượng thường tăng trong các ngày biến động cao, cho thấy tham gia của nhà đầu tư
-    5. **Cơ Hội Giao Dịch:** Bản đồ mô hình tiết lộ các cửa sổ giao dịch tối ưu theo giờ và ngày
-    """)
     
     st.markdown("---")
     
-    st.markdown("## 🔔 Tin Tức Thị Trường Gần Đây")
-    st.markdown("**Tin Tức Quan Trọng Về Bitcoin:**")
     
     if news:
         for i, item in enumerate(news[:15], 1):
