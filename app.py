@@ -264,9 +264,9 @@ def chart_wordcloud(news):
     fig, ax = plt.subplots(figsize=(12, 5))
     # ĐÃ THAY ĐỔI TITLE
     ax.imshow(wc, interpolation='bilinear')
-    ax.set_title('Biểu đồ WordCloud)')
+    ax.set_title('Biểu đồ WordCloud')
     ax.axis('off')
-    st.pyplot(fig)
+
     return fig
 
 def chart_network(d):
@@ -492,7 +492,7 @@ def main():
         st.plotly_chart(fig_sun, use_container_width=True)
         
     # ĐÃ THAY ĐỔI TIÊU ĐỀ INSIGHT
-    st.markdown('<div class="insight"><b>💬 Các Chủ Đề Nóng (WordCloud):</b><br>Dữ liệu từ CryptoPanic API (tin tức tiền điện tử). Từ càng to = xuất hiện trong tin tức càng nhiều. Giúp xác định chủ đề đang bị nhà đầu tư chú ý. Ví dụ: Nếu "ETF" to = có tin ETF Bitcoin, có thể ảnh hưởng đến giá. Hữu ích để hiểu "tâm lý thị trường" lúc này.</div>', unsafe_allow_html=True)
+    st.markdown('<div class="insight"><b>💬 Biểu đồ WordCloud:</b><br>Dữ liệu từ CryptoPanic API (tin tức tiền điện tử). Từ càng to = xuất hiện trong tin tức càng nhiều. Giúp xác định chủ đề đang bị nhà đầu tư chú ý. Ví dụ: Nếu "ETF" to = có tin ETF Bitcoin, có thể ảnh hưởng đến giá. Hữu ích để hiểu "tâm lý thị trường" lúc này.</div>', unsafe_allow_html=True)
     fig_wc = chart_wordcloud(news)
     if fig_wc:
         st.pyplot(fig_wc, use_container_width=True)
