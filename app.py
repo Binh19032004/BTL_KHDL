@@ -13,7 +13,7 @@ from scipy.stats import zscore
 import warnings
 warnings.filterwarnings('ignore')
 
-# https://btde-production.up.railway.app/   web da deploy
+
 
 st.set_page_config(page_title="BTC Analysis Pro", page_icon="📈", layout="wide", initial_sidebar_state="collapsed") # Thu gọn sidebar (mặc dù ta không dùng)
 
