@@ -263,6 +263,7 @@ def chart_wordcloud(news):
     wc = WordCloud(width=1200, height=500, background_color='white', colormap='viridis', prefer_horizontal=0.7).generate(txt)
     fig, ax = plt.subplots(figsize=(12, 5))
     # ĐÃ THAY ĐỔI TITLE
+    ax.imshow(wc, interpolation='bilinear')
     ax.set_title('Biểu đồ WordCloud)')
     ax.axis('off')
     st.pyplot(fig)
